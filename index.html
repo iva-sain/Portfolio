@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>IVA SAIN | Web Developer</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="horizontal-menu">
+      <h1>IVA <br /> SAIN</h1>
+      <br />
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <!--<li><a href="#skills" class="nav-link">Skills</a></li>-->
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact </a></li>
+      </ul>
+      <!--Menu on mobile-->
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <script type="text/JavaScript">
+        const burger = document.querySelector("#burger-menu");
+        const ul = document.querySelector("nav ul");
+        const nav = document.querySelector("nav");
+
+        //shows menu when user clicks
+        burger.addEventListener("click", () => {
+            ul.classList.toggle("show");
+        });
+        //close hamburger menu when a link is clicked
+        const navLink = document.querySelectorAll(".nav-link");
+        navLink.forEach((link) =>
+          link.addEventListener("click", () => {
+            ul.classList.remove("show");
+          })
+        );
+    </script>
+
+
+    <!-- About section -->
+    <section class="about" id="about" >
+          <h2>ABOUT me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+            autem deleniti cupiditate molestias quis unde quae totam porro dicta
+            iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+            nostrum dolor minus, libero delectus praesentium perferendis
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            consequuntur labore? Ea totam voluptas amet!
+          </p>
+    </section>
+
+
+    <!-- Skills section -->
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Web PROJECTS</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <h3 class="project-title">Chef Raúl Crespo</h3>
+          <img
+            src="assets/images/Chef-Raul-Crespo.png"
+            alt="Chef-Raul-Crespo"
+            loading="lazy"
+            class="project-pic"
+          />
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="https://www.chefraulcrespo.com/" target="_blank" class="project-link">Visit website</a>
+          <br><br><br>
+        </div>
+        <div class="project-container project-card">
+          <h3 class="project-title">Alameda Shop</h3>
+          <img
+            src="assets/images/Alameda-shop.png"
+            alt="alameda-shop"
+            loading="lazy"
+            class="project-pic"
+          />
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="https://thealamedashop.com/" target="_blank" class="project-link">Visit website</a>
+          <br><br><br>
+        </div>
+        <div class="project-container project-card">
+          <h3 class="project-title">Ram Jap Singh</h3>
+          <img
+            src="assets/images/Ram-Jap-Singh.png"
+            alt="Ram-Jap-Singh"
+            loading="lazy"
+            class="project-pic"
+          />
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="https://www.ramjapsingh.com/" target="_blank" class="project-link">Visit website</a>
+          <br><br><br>
+        </div>
+        <div class="project-container project-card">
+          <h3 class="project-title">Pulso Moda</h3>
+          <img
+            src="assets/images/Pulso-moda.png"
+            alt="pulso-moda"
+            loading="lazy"
+            class="project-pic"
+          />
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="https://www.pulsomoda.com/" target="_blank" class="project-link">Visit website</a>
+          <br><br><br>
+        </div>
+        <div class="project-container project-card">
+          <h3 class="project-title">Terapeuta Natalia Guerra</h3>
+          <img
+            src="assets/images/Terapeuta-Natalia-Guerra.png"
+            alt="terapeuta-natalia-guerra-scilletta"
+            loading="lazy"
+            class="project-pic"
+          />
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="https://nataliaguerrascilletta.com/" target="_blank" class="project-link">Visit website</a>
+          <br><br><br>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>CONTACT info</h2>
+      <div class="contact-form-container">
+        <h3> isainlukic@gmail.com </h3>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <!-- Scroll to top -->
+    <p class="scroll-up" id="scroll-up">
+        &#8613; <!-- símbolo de la flecha -->
+    </p>
+
+    <!--  scroll to top functionality -->
+    <script type="text/JavaScript">
+      const scrollUp = document.querySelector("#scroll-up");
+      scrollUp.addEventListener("click", () => {
+        window.scrollTo({top: 0,
+                         left: 0,
+                         behavior: "smooth",
+                       });
+                    });
+    </script>
+
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; <?php echo date("Y"); ?> - Built by Iva Sain</p>
+    </footer>
+
+
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
