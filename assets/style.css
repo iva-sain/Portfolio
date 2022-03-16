@@ -1,40 +1,42 @@
 /* Import the Roboto font from Google*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* VARIABLES -  declaring CSS variables*/
+/* Declaring CSS VARIABLES */
 :root {
   /* Fonts */
   --font-family: "Roboto", sans-serf;
   --normal-font: 200;
   --bold-font: 700;
-  --line-height: 1.7rem; /*distancia lineas texto*/
+  --line-height: 1.7rem;
   /* Logo */
   --logo-weight-font: 100;
   --logo-color: #F42CC3;
   /* Colors */
-  --bg-color: white;
+  --bg-color: #fff;
   --primary-color: #1d1d1d;
-  --secondary-color: #C7C6C7; /*cambiar------*/
+  --secondary-color: #99a3a2;
   /* Shadows ------*/
-  --primary-shadow: #8b8eaf;
+  --primary-shadow: #99a3a2;
   --secondary-shadow: #a17a69;
   /* Margin */
   --bottom-margin: 1rem; /*encabezado, proyectos*/
-  --bottom-margin-2: 3rem;
+  --bottom-margin-2: 4rem;
+  --project-margin: 4rem;
   /* Pading */
+  --section-topbottom-padding: 2rem;
   --section-pading: 1rem 6rem;
   /* Transition */
   --transition: 0.3s;
 }
-/* Variables end */
+/* -------------------------------- */
 
 
 html {
-  scroll-behavior: smooth; /*desplazamiento en pg más suave*/
+  scroll-behavior: smooth;
   background-color: var(--bg-color);
 }
 
-/* CSS Resets - to remove some default features*/
+/* CSS Resets - to remove some default features */
 * {
   margin: 0;
   padding: 0;
@@ -50,23 +52,28 @@ ul {
   list-style-type: none;
 }
 
-/* Links*/
 a {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   color: var(--primary-color);
 }
 
-a:hover {
-  /*color: var(--secondary-color);*/
+p {
+  text-align: justify;
 }
 
+hr {
+  width: 50%;
+  margin: 0 25% 0 25%;
+  color: var(--primary-color);
+  border: 1px dashed;
+}
 
 
 /*----------------------*/
 /* ------ Menu -------- */
 /*----------------------*/
-.horizontal-menu {
-  position: sticky; /* menu remains at the top no matter what */
+.menu {
+  position: sticky; /* menu remains at the top */
   top: 0;
   left: 0;
   z-index: 1; /* navbar displays over any other element on the web page */
@@ -86,17 +93,17 @@ nav h1 { /* LOGO */
 
   padding: 1.5rem 3.5rem ;
   margin-left: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.horizontal-menu  h1{ /* Linea bajo cabecera, logo */
-    border-bottom: 3px solid black;
+.menu  h1{ /* Linea bajo cabecera, logo */
+    border-bottom: 3px solid var(--primary-color);
 }
 
 nav a { /* MENU */
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   letter-spacing: 0.2em;
   margin-right: 5rem;
   transition: var(--transition);
@@ -107,8 +114,6 @@ nav a:hover, nav a:active {
 }
 
 nav ul {
-  /*display: flex; /*menu items side by side*/
-  /*gap: 1.9rem;*/
   text-align: right;
 }
 
@@ -132,12 +137,13 @@ nav ul li {
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
     nav {
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 1rem;
     }
 
     nav h1 {
       font-size: 40px;
       margin-left: -2rem;
+      margin-top: 0rem;
     }
 
     nav ul {
@@ -170,10 +176,12 @@ nav ul li {
 /* --- ABOUT section ---*/
 /*----------------------*/
 .about { /* Section */
-  background-color: var(--bg-color);
+  background-color: #ebf7f5;
   padding: var(--section-pading);
+  padding-top: var(--section-topbottom-padding);
+  padding-bottom: var(--section-topbottom-padding);
   margin-bottom: var(--bottom-margin-2);
-  margin-top: 1.2rem;
+  margin-top: 0.5rem;
   border-top:50px solid #fff;
 }
 
@@ -194,9 +202,13 @@ nav ul li {
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
   .about {
-      margin-top: 2rem;
-      padding: 1rem 3.5rem;
-    }
+    margin-top: 0rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .about h2{
+    text-align: center;
+  }
 
 }
 
@@ -227,8 +239,8 @@ nav ul li {
 
 .project-container { /* individual project container */
   text-align: center;
-  margin-bottom: 10rem;
-
+  margin-top: var(--project-margin);
+  margin-bottom: var(--project-margin);
 }
 
 /* Proyectos individuales */
@@ -240,27 +252,30 @@ nav ul li {
 }
 
 .project-pic { /* Captura web */
-  width: 60%;
+  width: 80%;
   height: auto;
   margin-bottom: 2rem;
   border: 1px grey solid;
 }
 
 .project-details { /* Contenido escrito */
-  padding: 2rem;
-  margin-bottom: var(--bottom-margin);
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  padding-bottom: 0rem;
+  margin-bottom: var(--bottom-margin-2);
 }
 
-.project-container a { /* Enlace web ---noooooo*/
+.project-container a { /* Enlace web */
   margin-bottom: var(--bottom-margin);
-  color: var(--primary-shadow);
+  color: var(--primary-color);
 }
 
 .project-card a{ /* Tarjeta proyecto */
   background-color: #fff;
   border-radius: 11px;
 
-  padding: 20px;
+  padding: 20px;;
   margin: 10px;
   border: 1px var(--logo-color) solid;
 }
@@ -276,13 +291,26 @@ nav ul li {
 /* RESPONSIVE */
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
-  .projects h2 {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
+  .projects h2{
+    text-align: center;
+    margin-top: 0rem;
+    padding: 2rem 1.5rem 0.1rem;
   }
   .projects-container{
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    margin-top: 0rem;
+    padding: 0rem 1.5rem;
+  }
+
+  .project-pic { /* Captura imag web */
+    width: 90%;
+  }
+
+  .project-details { /* Contenido escrito */
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    padding-bottom: 0rem;
+    margin-bottom: var(--bottom-margin-2);
   }
 
 }
@@ -296,7 +324,7 @@ nav ul li {
   background-color: white;
   margin-bottom: var(--bottom-margin-2);
   padding: var(--section-pading);
-  border: 1px solid #F42CC3;
+  border: 2px solid var(--logo-color);
 }
 
 .contact h2 { /* Contact title */
@@ -324,6 +352,7 @@ nav ul li {
     text-align: center;
   }
 }
+
 
 /*----------------------*/
 /* FOOTER section */
