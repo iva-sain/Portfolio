@@ -10,6 +10,7 @@
   --line-height: 1.7rem;
   /* Logo */
   --logo-weight-font: 100;
+  --logo-weight-font-mobile: 200;
   --logo-color: #F42CC3;
   /* Colors */
   --bg-color: #fff;
@@ -144,11 +145,11 @@ nav ul li {
       font-size: 40px;
       margin-left: -2rem;
       margin-top: 0rem;
+      font-weight: var(--logo-weight-font-mobile);
     }
 
     nav ul {
-      background-color: var(--bg-color);
-      opacity: 0.8;
+      opacity: 0.5;
       position: fixed;
       flex-direction: column;
       top: 160px;
@@ -156,6 +157,7 @@ nav ul li {
       width: 98%;
       transform: translateX(120%); /* push it to the right and force it out of the viewport */
       transition: transform 0.5s ease-in;
+      text-transform: uppercase;
     }
 
     nav ul li {
