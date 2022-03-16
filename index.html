@@ -6,39 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-    <!--CSS Styles -->
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/style.css">
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <title>IVA SAIN | Web Developer</title>
   </head>
 
-  <body>
 
-    <!-- Navbar -->
-    <nav class="horizontal-menu">
+<body>
+    <div id="about" ></div> <!-- ANCHOR LINK TO ABOUT -->
+
+    <!-- ............... -->
+    <!-- HEADER AND MENU -->
+    <!-- ............... -->
+    <nav class="menu">
       <h1>IVA <br /> SAIN</h1>
-      <br />
+      <br/>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
-        <!--<li><a href="#skills" class="nav-link">Skills</a></li>-->
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact </a></li>
       </ul>
@@ -48,49 +33,54 @@
       </button>
     </nav>
 
-    <script type="text/JavaScript">
-        const burger = document.querySelector("#burger-menu");
-        const ul = document.querySelector("nav ul");
-        const nav = document.querySelector("nav");
-
-        //shows menu when user clicks
-        burger.addEventListener("click", () => {
-            ul.classList.toggle("show");
-        });
-        //close hamburger menu when a link is clicked
-        const navLink = document.querySelectorAll(".nav-link");
-        navLink.forEach((link) =>
-          link.addEventListener("click", () => {
-            ul.classList.remove("show");
-          })
-        );
-    </script>
 
 
-    <!-- About section -->
-    <section class="about" id="about" >
-          <h2>ABOUT me</h2>
+    <!-- ............... -->
+    <!-- ABOUT section -->
+    <!-- ............... -->
+    <section class="about">
+          <h2>ABOUT</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-            autem deleniti cupiditate molestias quis unde quae totam porro dicta
-            iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+            I have always had a great interest in «everything visual«,
+            in creating and producing ideas and concepts from start to finish.
           </p>
+          <br>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-            nostrum dolor minus, libero delectus praesentium perferendis
+            Some of my creative experiences and hobbies: <br>
+            ▪ programming  ▪  math  ▪  teaching  ▪ <br>
+            ▪ digital printing and plottering ▪ <br>
+            ▪ photography ▪ illustration  ▪  craft products ▪ <br>
+            ▪  space design  ▪  writing  ▪
           </p>
+          <br>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-            consequuntur labore? Ea totam voluptas amet!
+            Since year 2020 I have been creating corporate websites and online stores. <br>
+            I do the complete web process: <br>
+            ✦ definition of requirements <br>
+            ✦ domain and hosting management <br>
+            ✦ web design and development <br>
+            ✦ product database management <br>
+            ✦ web maintenance
+          </p>
+          <br>
+          <div id="projects" ></div> <!-- ANCHOR LINK TO PROJECTS -->
+          <p>
+            Usually I work with a CMS (WordPress, Shopify, Squarespace) and I expand and change features
+            using plugins and web technologies (HTML5, CSS3, PHP, JS).
+            I do some other tasks using Adobe Photoshop, Adobe Illustrator and Adobe Creative Cloud.
+          </p>
+          <br>
+          <p>
+            I'm allways looking for new challenges!
           </p>
     </section>
 
 
-    <!-- Skills section -->
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
+    <!-- ............... -->
+    <!-- PROJECTS section -->
+    <!-- ............... -->
+    <section class="projects" >
       <h2 class="projects-title">Web PROJECTS</h2>
       <div class="projects-container">
         <div class="project-container project-card">
@@ -101,14 +91,18 @@
             loading="lazy"
             class="project-pic"
           />
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
+          <ul class="project-details">
+            <li>✦ Corporative website for Chef services. </li>
+            <li>✦ Design and development using Squarespace.
+            <li>✦ Use of web technologies to change features.</li>
+          </ul>
+
           <a href="https://www.chefraulcrespo.com/" target="_blank" class="project-link">Visit website</a>
-          <br><br><br>
+          <br><br>
         </div>
+
+        <hr>
+
         <div class="project-container project-card">
           <h3 class="project-title">Alameda Shop</h3>
           <img
@@ -117,14 +111,22 @@
             loading="lazy"
             class="project-pic"
           />
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
+          <ul class="project-details">
+            <li>✦ E-commerce website for a concept store. </li>
+            <li>✦ Multilingual (Spanish + English). </li>
+            <li>✦ Web design and developmen using Shopify. </li>
+            <li>✦ Use of plugins, web technologies and programming languages to expand and change features (CSS and liquid).</li>
+            <li>✦ Implementation of payment platforms.</li>
+            <li>✦ Product data base management. </li>
+            <li>✦ Configuration and synchronization with social media (Instagram + Facebook).</li>
+            <li>✦ Configuration and use of email-marketing (Mailchimp).</li>
+          </ul>
           <a href="https://thealamedashop.com/" target="_blank" class="project-link">Visit website</a>
-          <br><br><br>
+          <br><br>
         </div>
+
+        <hr>
+
         <div class="project-container project-card">
           <h3 class="project-title">Ram Jap Singh</h3>
           <img
@@ -133,14 +135,20 @@
             loading="lazy"
             class="project-pic"
           />
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
+          <ul class="project-details">
+            <li>✦ E-commerce website for Kundalini Yoga lessons, Sound Healing therapies and Mantra music. </li>
+            <li>✦ Web design and development using Wordpress + Woocommerce.</li>
+            <li>✦ Use of plugins, web technologies and programming languages to expand and change features.</li>
+            <li>✦ Implementation of payment platforms.</li>
+            <li>✦ Product data base management. </li>
+            <li>✦ Configuration and use of email-marketing (Mailchimp).</li>
+          </ul>
           <a href="https://www.ramjapsingh.com/" target="_blank" class="project-link">Visit website</a>
-          <br><br><br>
+          <br><br>
         </div>
+
+        <hr>
+
         <div class="project-container project-card">
           <h3 class="project-title">Pulso Moda</h3>
           <img
@@ -149,14 +157,23 @@
             loading="lazy"
             class="project-pic"
           />
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
+          <ul class="project-details">
+            <li>✦ E-commerce website for handmade products.</li>
+            <li>✦ Web design and development using Wordpress + Woocommerce.</li>
+            <li>✦ Use of plugins, web technologies and programming languages to expand and change features.</li>
+            <li>✦ User configuration and management (wholesale and retail customers).</li>
+            <li>✦ Shows different prices depending if a wholesale or retail customer is logged.</li>
+            <li>✦ Implementation of payment platforms.</li>
+            <li>✦ Product data base management. </li>
+            <li>✦ Photos and videos shooting and edition.</li>
+            <li>✦ Configuration and use of email-marketing (Mailchimp).</li>
+          </ul>
           <a href="https://www.pulsomoda.com/" target="_blank" class="project-link">Visit website</a>
-          <br><br><br>
+          <br><br>
         </div>
+
+        <hr>
+
         <div class="project-container project-card">
           <h3 class="project-title">Terapeuta Natalia Guerra</h3>
           <img
@@ -165,19 +182,26 @@
             loading="lazy"
             class="project-pic"
           />
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
+          <ul class="project-details">
+            <li>✦ Corporative website for a Therapist.</li>
+            <li>✦ Web design and developmen using WordPress. </li>
+            <li>✦ Use of plugins, web technologies and programming languages to expand and change features.</li>
+            <li>✦ Zoom integration for webinars, events and private consultation.</li>
+            <li>✦ Configuration and use of email-marketing (Mailchimp).</li>
+            <li>✦ Website content review.</li>
+            <li>✦ Flyers design.</li>
+          </ul>
           <a href="https://nataliaguerrascilletta.com/" target="_blank" class="project-link">Visit website</a>
-          <br><br><br>
+          <br><br>
         </div>
       </div>
     </section>
 
 
+
+    <!-- ............... -->
     <!-- Contact section -->
+    <!-- ............... -->
     <section class="contact" id="contact">
       <h2>CONTACT info</h2>
       <div class="contact-form-container">
@@ -185,35 +209,27 @@
       </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
+
+
+    <!-- ............... -->
+    <!-- Footer section -->
+    <!-- ............... -->
+    <footer>
+      <p class="copy">&copy;
+                <script>document.write( new Date().getFullYear() );</script>
+                by Iva Sain ✦</p>
+    </footer>
+
 
     <!-- Scroll to top -->
     <p class="scroll-up" id="scroll-up">
         &#8613; <!-- símbolo de la flecha -->
     </p>
 
-    <!--  scroll to top functionality -->
-    <script type="text/JavaScript">
-      const scrollUp = document.querySelector("#scroll-up");
-      scrollUp.addEventListener("click", () => {
-        window.scrollTo({top: 0,
-                         left: 0,
-                         behavior: "smooth",
-                       });
-                    });
-    </script>
 
+    <!-- Website SCIPTS -->
+    <script src="assets/scripts.js"></script>
 
-    <!-- Footer section -->
-    <footer>
-      <!--<p class="copy">&copy; <?php echo date("Y"); ?> - Built by Iva Sain</p>-->
-      <p class="copy">&copy; <script>document.write( new Date().getFullYear() );</script> - Built by Iva Sain</p>
-    </footer>
-
-
-
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
 
     <!-- Ion icons scripts -->
     <script
@@ -224,5 +240,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
   </body>
 </html>
