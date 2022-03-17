@@ -351,7 +351,8 @@ nav ul li {
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
   .contact h2, .contact h3{
-    margin-left: 0rem;
+    display: block;
+    margin: 0 auto;
     text-align: center;
   }
 }
