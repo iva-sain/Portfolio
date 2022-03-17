@@ -338,7 +338,7 @@ nav ul li {
   margin-top: var(--bottom-margin);
 }
 
-.contact p { /* Contact info */
+.contact h3 { /* Contact info */
   text-align: left;
   font-weight: var(--normal-font);
   color: #F42CC3;
@@ -350,7 +350,7 @@ nav ul li {
 /* RESPONSIVE */
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
-  .contact h2, .contact p{
+  .contact h2, .contact h3{
     text-align: center;
   }
 }
