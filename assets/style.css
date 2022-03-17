@@ -352,6 +352,7 @@ nav ul li {
   /*changes reflects on screen with a width of 720px and below*/
   .contact h2, .contact h3{
     margin: 0 !important;
+    padding: 0 !important;
     text-align: center;
   }
 }
