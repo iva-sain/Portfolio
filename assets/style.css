@@ -338,7 +338,7 @@ nav ul li {
   margin-top: var(--bottom-margin);
 }
 
-.contact h3 { /* Contact info */
+.contact p { /* Contact info */
   text-align: left;
   font-weight: var(--normal-font);
   color: #F42CC3;
